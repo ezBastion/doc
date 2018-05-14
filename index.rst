@@ -1,7 +1,7 @@
 Welcome to ezBastion
 ====================
 
-.. image:: image/rook-green.png
+.. image:: image/ezb-logo-large.png
    :align: center
 
 About
