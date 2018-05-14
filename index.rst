@@ -29,11 +29,11 @@ Use Case
    :hidden:
    :caption: Microservices
 
-   micro/ezb_pki
-   micro/ezb_db
-   micro/ezb_sta
-   micro/ezb_srv
-   micro/ezb_wks
-   micro/admin_console
+   services/ezb_pki
+   services/ezb_db
+   services/ezb_sta
+   services/ezb_srv
+   services/ezb_wks
+   services/admin_console
 
 
