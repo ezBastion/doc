@@ -36,4 +36,26 @@ Use Case
    services/ezb_wks
    services/admin_console
 
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :caption: Install
 
+   setup/ezb_pki
+   setup/ezb_db
+   setup/ezb_sta
+   setup/ezb_srv
+   setup/ezb_wks
+   setup/admin_console
+
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :caption: How to
+
+   howto/first_api
+   howto/active_directory
+   howto/collection
+   howto/asynchonous
+   
