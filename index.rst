@@ -42,8 +42,8 @@ Use Case
    :caption: Install
 
    setup/ezb_pki
-   setup/ezb_db
    setup/ezb_sta
+   setup/ezb_db
    setup/ezb_srv
    setup/ezb_wks
    setup/admin_console
