@@ -21,6 +21,8 @@ Use Case
 
    intro/overview
    intro/architecture
+   intro/features
+   intro/use_case
    intro/terminology
 
 
@@ -35,6 +37,7 @@ Use Case
    services/ezb_srv
    services/ezb_wks
    services/admin_console
+   services/ezb_vault
 
 .. toctree::
    :maxdepth: 2
@@ -47,6 +50,7 @@ Use Case
    setup/ezb_srv
    setup/ezb_wks
    setup/admin_console
+   setup/ezb_vault
 
 
 .. toctree::
