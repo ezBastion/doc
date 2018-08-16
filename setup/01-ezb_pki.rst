@@ -1,9 +1,9 @@
-ezBastion PKI (ezb_db)
+ezBastion PKI (ezb_pki)
 ======================
 
 
 The PKI (Public Key Infrastructure) is the first node to be installed. It will be in charge to create and deploy the ECDSA pair key, used by all ezBastion's node to communicate.
-The certificates are use to sign JWT too.
+The certificates are used to sign JWT too.
 
 Prerequisite
 ------------
@@ -25,9 +25,9 @@ setup
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""
 3. Run ezb_pki.exe with **init** option.
 """"""""""""""""""""""""""""""""""""""""
-- name: This is the name used as Windows service and as certificat root name.
+- name: This is the name used as Windows service and as certificates root name.
 - fullname:The Windows service description.
-- listen: The TCP/IP port used by ezb_pki to respond at nodes request. This port MUST BE reachebled by all ezBastion's node.
+- listen: The TCP/IP port used by ezb_pki to respond at nodes request. This port MUST BE reachable by all ezBastion's node.
 
 
 4. Install Windows service and start it.
@@ -41,9 +41,10 @@ setup
 
 security consideration
 ----------------------
-- You can use your own pki system, simply copy certificat pair in node cert folder.
-- ezb_pki is a auto enrolment system, if you do not add nodes, stop the service or don't install it and use debug mode instead.
-- protec cert folder
+- ezb_pki is an auto-enrolment system, if you do not add nodes, stop the service or don't install it and use debug mode instead.
+- Protect cert folder.
+- Backup the private/public key.
+
 
 
 

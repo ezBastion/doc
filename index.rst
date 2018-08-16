@@ -44,13 +44,14 @@ Use Case
    :hidden:
    :caption: Install
 
-   setup/ezb_pki
-   setup/ezb_sta
-   setup/ezb_db
-   setup/ezb_srv
-   setup/ezb_wks
-   setup/admin_console
-   setup/ezb_vault
+   setup/00-setup
+   setup/01-ezb_pki
+   setup/02-ezb_db
+   setup/03-ezb_sta
+   setup/04-ezb_srv
+   setup/05-ezb_wks
+   setup/06-admin_console
+   setup/07-ezb_vault
 
 
 .. toctree::
