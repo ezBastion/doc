@@ -5,18 +5,6 @@ ezBastion PKI (ezb_pki)
 The PKI (Public Key Infrastructure) is the first node to be installed. It will be in charge to create and deploy the ECDSA pair key, used by all ezBastion's node to communicate.
 The certificates are used to sign JWT too.
 
-Prerequisite
-------------
-
-- Any edition of Windows servers 64b.
-- 10Mo free space.
-- 10Mo memory.
-- Admin right to install service.
-- 1 minute.
-
-
-setup
------
 
 1. Download ezb_pki from `GitHub <https://github.com/ezBastion/ezb_pki/releases/latest>`_ .
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
