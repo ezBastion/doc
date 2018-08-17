@@ -43,11 +43,11 @@ Windows
         "issuer": "ezb_sta",
         "audience": "ezBastion",
         "jwtttl": 1200,
-        "ezbdb": "https://chavers-desk:8444/",
+        "ezbdb": "https://ezb_db.fqdn:8444/",
         "port": 5001
     }
 
-**publiccert** must be the issuer name.
+**publiccert** must be the same than issuer name.
 
 **9. Deploy certificat**
 
