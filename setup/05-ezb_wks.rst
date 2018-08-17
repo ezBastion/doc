@@ -7,12 +7,13 @@ You must install as much *workers* as you have service account to use.
 Windows
 -------
 
-1. Download ezb_db from `GitHub <https://github.com/ezBastion/ezb_db/releases/latest>`_ .
+1. Download ezb_wks from `GitHub <https://github.com/ezBastion/ezb_worker/releases/latest>`_ .
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 2. Open a admin command prompte, like CMD or Powershell.
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""
-3. Run ezb_db.exe with **init** option.
+
+3. Run ezb_wks.exe with **init** option.
 """"""""""""""""""""""""""""""""""""""""
 
 - ezb_pki: tpc address and port of ezb_pki.
@@ -26,22 +27,7 @@ Windows
 .. code-block:: json
 
     {
-        "listen": ":5003",
-        "scriptpath": "E:\\ezbastion\\ezb_worker/script",
-        "jobpath": "E:\\ezbastion\\ezb_worker/job",
-        "loglevel": "info",
-        "privatekey": "cert/ezb_wks.key",
-        "publiccert": "cert/ezb_wks.crt",
-        "cacert": "cert/ca.crt",
-        "servicename": "ezb_wks",
-        "servicefullname": "ezBastion worker",
-        "ezb_pki": "ezb_pki.fqdn:5000",
-        "san": [
-            "mydbserver",
-            "mydbserver.fqdn"
-        ],
-        "limitwarning": 20,
-        "limitmax": 50
+
     }
 
 
@@ -49,8 +35,8 @@ Windows
 """"""""""""""""""""""""""""""""""""""""
 .. code-block:: powershell
 
-    ezb_db install
-    ezb_db start
+    ezb_wks install
+    ezb_wks start
 
 
 

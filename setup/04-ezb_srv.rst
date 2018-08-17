@@ -51,8 +51,8 @@ Windows
 """"""""""""""""""""""""""""""""""""""""
 .. code-block:: powershell
 
-    ezb_db install
-    ezb_db start
+    ezb_srv install
+    ezb_srv start
 
 .. [1] *:port* for all interfaces, *1.2.3.4:port* for IPv4, *0.0.0.0:port* for all IPv4 interfaces, *address.fqdn:port* for DNS resolution.
 .. [2] The *cacheL1* is the retention time for information from the database.
