@@ -1,8 +1,8 @@
-4/ front server (ezb_srv)
+4/ Front server (ezb_srv)
 ====================
 
 this is the service that is responsible for routing and validating authorizations. It receive the requests and give them to the workers.
- It is advisable to have at least two servers behind a load balancer. You must copy all public certificat from STA services to cert folder.
+It is advisable to have at least two servers behind a load balancer. You must copy all public certificat from STA services to cert folder.
 
 
 Windows

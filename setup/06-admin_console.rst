@@ -1,8 +1,8 @@
-6/ admin console
+6/ Admin console (ezb_admin)
 ====================
 
 The ezBastion console is dedicated to API administrator. With this web console you can declare some account, api and link them together.
- A dashboard provide ezBastion statistic. ezb_admin is a pure javascript application, running 100% on the administrator browser (HTML5 mandatyory).
+A dashboard provide ezBastion statistic. ezb_admin is a pure javascript application, running 100% on the administrator browser (HTML5 mandatyory).
   
 
 1. Http server
@@ -30,7 +30,7 @@ download ezb_admin from `GitHub <https://github.com/ezBastion/ezb_admin/releases
     }
 
 4. Connect
-====
+"""""
 
 With your preferred HTML5 browser, login with admin/ezBastion default account and start converting your scripts into API.
 
