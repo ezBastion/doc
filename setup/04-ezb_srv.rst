@@ -1,4 +1,4 @@
-Bastion microservice (ezb_srv)
+4/ front server (ezb_srv)
 ====================
 
 this is the service that is responsible for routing and validating authorizations. It receive the requests and give them to the workers.
@@ -55,4 +55,4 @@ Windows
     ezb_srv start
 
 .. [1] *:port* for all interfaces, *1.2.3.4:port* for IPv4, *0.0.0.0:port* for all IPv4 interfaces, *address.fqdn:port* for DNS resolution.
-.. [2] The *cacheL1* is the retention time for information from the database.
+.. [2] The *cacheL1* is the retention time for information comming from the database.

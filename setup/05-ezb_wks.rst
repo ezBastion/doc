@@ -1,4 +1,4 @@
-Worker microservice (ezb_wks)
+5/ Worker (ezb_wks)
 ===================
 
 This service is in charge of executing your scripts. It must be started with an account with the appropriate rights.
@@ -27,7 +27,22 @@ Windows
 .. code-block:: json
 
     {
-
+        "listen": ":5003",
+        "scriptpath": "E:\\ezbastion\\ezb_worker/script",
+        "jobpath": "E:\\ezbastion\\ezb_worker/job",
+        "loglevel": "info",
+        "privatekey": "cert/ezb_wks.key",
+        "publiccert": "cert/ezb_wks.crt",
+        "cacert": "cert/ca.crt",
+        "servicename": "ezb_wks",
+        "servicefullname": "ezBastion worker",
+        "ezb_pki": "ezb_pki.fqdn:5000",
+        "san": [
+            "mydbserver",
+            "mydbserver.fqdn"
+        ],
+        "limitwarning": 20,
+        "limitmax": 50
     }
 
 
