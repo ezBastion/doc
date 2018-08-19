@@ -1,5 +1,6 @@
 terminology
 ===========
+.. image:: /image/under-construction.png
 
 - **EZB-PKI**:
 - **EZB-DB**:

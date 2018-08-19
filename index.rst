@@ -4,6 +4,8 @@ Welcome to ezBastion
 .. image:: image/ezb-logo-large.png
    :align: center
 
+.. image:: /image/under-construction.png
+
 About
 ^^^^^
 
