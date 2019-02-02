@@ -1,5 +1,6 @@
+############
 architecture
-============
+############
 
 .. image:: /image/under-construction.png
 
@@ -8,8 +9,9 @@ architecture
 
 ezBastion architecture is split in three zones, public, infrastructure and business.
 
+***********
 Public zone
-^^^^^^^^^^^
+***********
 
 This area is accessible by clients (users, services, computers) and must use corporate certificates. It is recommended to use multiple bastion (ezb_srv) and security token authority (ezb_sta) behind a load balancing system.
 
@@ -31,8 +33,9 @@ This node, called *Bastion*, is the front part of ezBastion architecture. It rec
 - Logging
 - Load balancing workers
 
+*******************
 Infrastructure zone
-^^^^^^^^^^^^^^^^^^^
+*******************
 
 This area is dedicated to ezBastion management team. 
 
@@ -59,8 +62,9 @@ All managment and configutaion, are made from a centralized web console.
 
 - Web console
 
+*************
 business zone
-^^^^^^^^^^^^^
+*************
 
 The services running in this area are business dependent. You can provide API to different business line, using dedicated workers.
 
