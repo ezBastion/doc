@@ -9,10 +9,15 @@ Windows
 -------
 
 **1. Download ezb_sta from** `GitHub <https://github.com/ezBastion/ezb_sta/releases/latest>`_ 
+
 **2. Download latest 9.X node.js with npm from** `official node.js site <https://nodejs.org/en/download/>`_ 
+
 **3. Install nodes.js**
+
 **4. Unzip ezb_sta package into the final Windows service folder**
+
 **5. Open a admin command prompte, like CMD or Powershell.**
+
 **6. From ezb_sta folder, install module with npm**
 
 .. code-block:: posh
