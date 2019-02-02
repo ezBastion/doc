@@ -25,7 +25,6 @@ Use Case
    intro/architecture
    intro/features
    intro/use_case
-   intro/terminology
 
 
 .. toctree::

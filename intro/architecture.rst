@@ -1,13 +1,10 @@
 ############
-architecture
+Architecture
 ############
 
-.. image:: /image/under-construction.png
-
+ezBastion architecture is split in three zones, public, infrastructure and business and six microservices.
 
 .. image:: /image/EZBNetwork.jpg
-
-ezBastion architecture is split in three zones, public, infrastructure and business.
 
 ***********
 Public zone
@@ -75,7 +72,9 @@ The workers are the infrastructure backend. There are in charge to execute busin
 
 - Task execution
 
-
 ezb_vault
 =========
 
+Some time we need user/password inside a script, and clear password is evil !  Vault node, will store key/value inside an *AES* dedicated DB.
+
+- key/value secure store
