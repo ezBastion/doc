@@ -21,7 +21,6 @@ Use Case
    :hidden:
    :caption: Introduction
 
-   intro/overview
    intro/architecture
    intro/features
    intro/use_case
