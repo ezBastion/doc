@@ -17,14 +17,13 @@ In general, to administer a system, you need 4 elements:
 - Access rights and flow opening.
 - Consoles or administrative clients.
 
-Just one question: Do you have any actions that you could delegate, if there were not the above points?
+Just one question: Do you have any actions that could be delegated, if there were not the above points?
 
 .. toctree::
    :maxdepth: 2
    :hidden:
    :caption: Introduction
 
-   index
    intro/architecture
    intro/features
    intro/use_case
