@@ -1,5 +1,22 @@
-ezBastion setup prerequisite
-============================
+Setup mode
+==========
+
+Simple architecture
+-------------------
+
+Install all services on the same machine with a unique setup. Ideal the small configuration or proof of concept. 
+Download the "all in one" `package here<https://www.ezbastion.com/download>`_ , unzip the ezbastion.exe file and follow 
+the "next, next, next, finish" install. You need a windows server with 100Mo free space, a web service (IIS/nginX..) and 5 minutes.
+
+
+Expert architecture
+-------------------
+
+For stronger architecture, you can use as much server as you need. Use load balancing for microservices except workers that use their own system.
+ Download latest `binary here<https://www.ezbastion.com/download>`_ and follow the documentation below to install and configure all microservices.
+
+Setup prerequisite
+==================
 
 ezBastion try to be lighter as possible, the setup is fast and can be full automatised. You need at least:
 

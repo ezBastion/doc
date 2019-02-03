@@ -1,26 +1,30 @@
-Welcome to ezBastion
-====================
 
 .. image:: image/ezb-logo-large.png
    :align: center
 
-.. image:: /image/under-construction.png
+########
+Overview
+########
 
-About
-^^^^^
+The purpose of ezBastion is to allow you to provide your administrative tasks via REST requests. Once the nodes have been installed,
+you will be able to import your system administrators's scripts and assign them an HTTPS URL. To finish, declare the users and 
+delegate the apis.
 
-Technical Aspects
-^^^^^^^^^^^^^^^^^
+In general, to administer a system, you need 4 elements:
 
+- An administrator account.
+- The knowledge of the product.
+- Access rights and flow opening.
+- Consoles or administrative clients.
 
-Use Case
-^^^^^^^^
+Just one question: Do you have any actions that you could delegate, if there were not the above points?
 
 .. toctree::
    :maxdepth: 2
    :hidden:
    :caption: Introduction
 
+   index
    intro/architecture
    intro/features
    intro/use_case
