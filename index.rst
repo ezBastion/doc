@@ -2,9 +2,6 @@
 .. image:: image/ezb-logo-large.png
    :align: center
 
-########
-Overview
-########
 
 The purpose of ezBastion is to allow you to provide your administrative tasks via REST requests. Once the nodes have been installed,
 you will be able to import your system administrators's scripts and assign them an HTTPS URL. To finish, declare the users and 
