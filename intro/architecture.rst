@@ -1,6 +1,7 @@
-.. image:: image/ezb-logo-large.png
+
+.. image:: ../image/ezb-logo-large.png
    :align: center
-   
+
 ########
 Overview
 ########
