@@ -29,19 +29,6 @@ Just one question: Do you have any actions that could be delegated, if there wer
 .. toctree::
    :maxdepth: 2
    :hidden:
-   :caption: Microservices
-
-   services/ezb_pki
-   services/ezb_db
-   services/ezb_sta
-   services/ezb_srv
-   services/ezb_wks
-   services/admin_console
-   services/ezb_vault
-
-.. toctree::
-   :maxdepth: 2
-   :hidden:
    :caption: Install
 
    setup/00-setup
