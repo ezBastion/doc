@@ -32,6 +32,6 @@ download ezb_admin from `GitHub <https://github.com/ezBastion/ezb_admin/releases
 4. Connect
 """"""""""
 
-With your preferred HTML5 browser, login with admin/ezBastion default account and start converting your scripts into API.
+With your preferred HTML5 browser, login with admin/ezBastion as default account and start converting your scripts into API.
 
 .. image:: /image/ezb_admin_login.jpg

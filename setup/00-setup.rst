@@ -5,7 +5,7 @@ Simple architecture
 -------------------
 
 Install all services on the same machine with a unique setup. Ideal the small configuration or proof of concept. 
-Download the "all in one" package here https://www.ezbastion.com/download, unzip the ezbastion.exe file and follow 
+Download the "ezbastion_allinone.zip" package here https://github.com/ezBastion/doc/releases/latest, unzip the ezbastion.exe file and follow 
 the "next, next, next, finish" install. You need a windows server with 100Mo free space, a web service (IIS/nginX..) and 5 minutes.
 
 
