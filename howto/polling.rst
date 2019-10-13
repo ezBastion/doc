@@ -18,7 +18,8 @@ Configuration
 *************
 
 Activate "Asynchronous polling" in a POST api. Nothing else change (in your script to), just one click.  
-.. image:: /image/Polling-admin.jpg
+
+.. image:: /image/polling-admin.jpg
 
 
 on the client
@@ -30,7 +31,7 @@ A polling api return a json structure with three url:
 - logurl: text file with raw script output (stdout + error + warning ...)
 - resulturl: Link used to receive script json output when *status* is "FINISH"
 
-.. image:: /image/Polling-call.jpg
+.. image:: /image/polling-call.jpg
 
 
 on the worker
