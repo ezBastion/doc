@@ -12,7 +12,7 @@ Well ... Let's take an example.
 You use a Powershell script for provisioning your's VDI and this script takes 15 minutes. We will use polling to avoid any client timeout. 
 If API polling option is checked, ezBastion will return task status link instead of waiting task end. The client will call this link to have the progress of the task and finally get the result.
 
-.. image:: /image/Polling-flow.jpg
+.. image:: /image/Polling-flow.png
 
 
 
