@@ -14,12 +14,37 @@ If API polling option is checked, ezBastion will return task status link instead
 
 .. image:: /image/Polling-flow.png
 
+Configuration
+*************
 
+Activate "Asynchronous polling" in a POST api. Nothing else change (in your script to), just one click.  
+.. image:: /image/Polling-admin.jpg
+
+
+on the client
+*************
+
+A polling api return a json structure with three url:
+
+- statusurl: This json, updated  at script end. This link provide the task status ("PENDING", "RUNNING", "FAILED", "FINISH")
+- logurl: text file with raw script output (stdout + error + warning ...)
+- resulturl: Link used to receive script json output when *status* is "FINISH"
+
+.. image:: /image/Polling-call.jpg
+
+
+on the worker
+*************
+
+On the worker, inside *jobpath* folder (see install/worker) a directory tree will be created, with /year/month/day format. 
+You will found three file inside a folder named with the task UUID. One for the log, one for the status and the last for the result.
 
 
 Require:
+********
 
 - ezb_admin v0.1.3
 - ezb_db v0.1.4
 - ezb_srv v0.1.4
 - ezb_wks v0.1.4
+- API should use POST methode.
