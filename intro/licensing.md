@@ -9,7 +9,7 @@ Download **ezBastion** free today and start deliver API in less a hour.
 Permissions of this strongest copyleft license are conditioned on making available complete source code of licensed works and modifications, which include larger works using a licensed work, under the same license. Copyright and license notices must be preserved. Contributors provide an express grant of patent rights. When a modified version is used to provide a service over a network, the complete source code of the modified version must be made available.
 
 ## Community
-No registration, no cost. If you like it, register your Bastion and transform your infrastructure to Service Oriented Architecture. You can pay if you want.
+No registration, no cost. If you like it, register your Bastion and transform your infrastructure to Service Oriented Architecture. You can pay too if you want.
 
 
 ## Enterprise
