@@ -22,8 +22,7 @@ Just one question: Do you have any actions that could be delegated, if there wer
    :caption: Introduction
 
    intro/architecture
-   intro/features
-   intro/use_case
+   intro/licensing
 
 
 .. toctree::
