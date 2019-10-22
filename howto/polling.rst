@@ -41,8 +41,8 @@ On the worker, inside *jobpath* folder (see install/worker) a directory tree wil
 You will found three file inside a folder named with the task UUID. One for the log, one for the status and the last for the result.
 
 
-Require:
-********
+Require  mini:
+**************
 
 - ezb_admin v0.1.3
 - ezb_db v0.2.0
