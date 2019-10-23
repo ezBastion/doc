@@ -25,6 +25,7 @@
 
 A simple declaration, don't forget to activate it.
 
+**Add test1.ps1 as a job**
 <iframe width="640" height="360" src="https://www.youtube.com/embed/SqhZ5o1MK1o?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
@@ -44,6 +45,7 @@ token_type   : bearer
 
 As worker is the service they run your script. Be sure to install all needed sdk on the machine and run the service with a account granted. Add one or more tag, we will need it after.
 
+**Add "pocworker1" worker and create "poc" tag**
 <iframe width="640" height="360" src="https://www.youtube.com/embed/EBb47HLt98I?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### End point
@@ -53,6 +55,7 @@ Where we link all. We will generate a unique URL for this api. But first, take a
 
 we can split this url in seven parts, ezBastion use it to route the api.
 
+- GET: REST methode used.
 - https: scheme or protocol used.
 - api.ezbastion.com: bastion dns name.
 - v1: api version.
@@ -60,6 +63,15 @@ we can split this url in seven parts, ezBastion use it to route the api.
 - action: same as controller, it's a legacy of MVC model.
 - path: some static or variables items need by the script.
 - query: a other way to provide items to script.
+
+**Add an api end point https://api.ezbastion.com/v1/poc/test**
+<iframe width="640" height="360" src="https://www.youtube.com/embed/iPObw6jC9xo?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### Grant an account
+
+**Add a Windows account and link the api**
+<iframe width="640" height="360" src="https://www.youtube.com/embed/YkhsE4Gv_ks?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 ## Test it
 
