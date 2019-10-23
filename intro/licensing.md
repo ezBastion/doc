@@ -2,7 +2,7 @@
 
 Download **ezBastion** free today and start deliver API in less a hour. 
 
-![AGPLv3](https://github.com/ezBastion/doc/raw/master/image/agplv3.png)
+![ ](https://github.com/ezBastion/doc/raw/master/image/agplv3.png)
 
 **GNU Affero General Public License v3.0**
 
