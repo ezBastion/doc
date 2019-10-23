@@ -81,14 +81,10 @@ http://www.getpostman.com/
 
 ### Powershell
 
-```powershell
-PS C:\Users\chavers> Write-Information "test"
-```
+
 ## Debug
 
 ### Log
-
-### Polling
 
 ### DB browser
 
