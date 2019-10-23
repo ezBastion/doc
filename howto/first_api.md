@@ -17,13 +17,13 @@
 ## Admin console
 
 - Declare your script.
-- Test Bastion and STA (only for the fist api ).
+- Test Bastion and STA (only for the fist api ^^ ).
 - Register your first worker.
-- Create end point
+- Create an end point
 
 ### Job
 
-
+A simple declaration, don't forget to activate it.
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/SqhZ5o1MK1o?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -42,7 +42,24 @@ token_type   : bearer
 ```
 ### Workers
 
+As worker is the service they run your script. Be sure to install all needed sdk on the machine and run the service with a account granted. Add one or more tag, we will need it after.
+
 <iframe width="640" height="360" src="https://www.youtube.com/embed/EBb47HLt98I?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### End point
+
+Where we link all. We will generate a unique URL for this api. But first, take a look at ezBastion end point format:
+![ ](https://github.com/ezBastion/doc/raw/master/image/api-url.jpg)
+
+we can split this url in seven parts, ezBastion use it to route the api.
+
+- https: scheme or protocol used.
+- api.ezbastion.com: bastion dns name.
+- v1: api version.
+- controller: name use in routing system.
+- action: same as controller, it's a legacy of MVC model.
+- path: some static or variables items need by the script.
+- query: a other way to provide items to script.
 
 ## Test it
 
