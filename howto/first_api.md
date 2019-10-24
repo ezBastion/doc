@@ -5,7 +5,7 @@
 
 - ezBastion up and running
 - An automation powershell script
-- A youtube access.
+- A youtube access to read this page.
 
 
 
@@ -58,9 +58,10 @@ finally{
 - Declare your script.
 - Test Bastion and STA (only for the fist api ^^ ).
 - Register your first worker.
-- Create an end point
+- Create an end point.
+- Link this endpoint to user account.
 
-### Job
+### 1 Job
 
 A simple declaration, but don't forget to activate it.
 
@@ -68,7 +69,7 @@ A simple declaration, but don't forget to activate it.
 <iframe width="640" height="360" src="https://www.youtube.com/embed/SqhZ5o1MK1o?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-### Bastion / STA
+### 2 Bastion / STA
 The easy way to test ezBastion front and authentication service, it's to use the *authorize* end point. If you receive a jwt in *access_token*, it smells good. You can decode this jwt, using https://jwt.io/ 
 ```powershell
 PS C:\> Invoke-RestMethod https://ezbastion.company.ltd/authorize -UseDefaultCredentials
@@ -80,14 +81,14 @@ access_token : slfghqsfjkihgq.swgfsqfdgsfdghsf.sfghsfgqf
 token_type   : bearer
 
 ```
-### Workers
+### 3 Workers
 
 As worker is the service they run your script. Be sure to install all needed sdk on the machine and run the service with a account granted. Add one or more tag, we will need it after.
 
 **Add "pocworker1" worker and create "poc" tag**
 <iframe width="640" height="360" src="https://www.youtube.com/embed/EBb47HLt98I?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-### End point
+### 4 End point
 
 Where we link all. We will generate a unique URL for this api. But first, take a look at ezBastion end point format:
 ![ ](https://github.com/ezBastion/doc/raw/master/image/api-url.jpg)
@@ -106,7 +107,7 @@ we can split this url in seven parts, ezBastion use it to route the api.
 **Add an api end point https://api.ezbastion.com/v1/poc/test**
 <iframe width="640" height="360" src="https://www.youtube.com/embed/iPObw6jC9xo?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-### Grant an account
+### 5 Grant an account
 
 **Add a Windows account and link the api**
 <iframe width="640" height="360" src="https://www.youtube.com/embed/YkhsE4Gv_ks?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
