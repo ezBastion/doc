@@ -1,18 +1,57 @@
 # Make your first api
+**Hello World step by step**
 
 ## Perequisite
 
 - ezBastion up and running
+- An automation powershell script
+- A youtube access.
 
 
 
 ## Automation script adaptation
 
+**A incredible "hello world" in powershell, will be our automation script who need api**
+<iframe width="640" height="360" src="https://www.youtube.com/embed/BWTGAsUUxaM?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ### Input
+
+By defaut ezBastion push routing information to the script. You can use this information, using some variables:
+```powershell
+[CmdletBinding()]
+param (
+    $tokenid,
+    $methode,
+    $tag,
+    $path,
+    $version,
+    $query,
+    $constant,
+    $xtrack,
+    $body
+)
+```
+Variables, tags, path, query, constant and body, are json string. You must unserialize it befor use.
 
 ### Output
 
-### Log
+ezBastion worker waiting for script output, a json or empty string or error on stderr channel. Json produce a http 200 code, empty output a http 204 (no content) and a error produce a http 500.
+
+If $out exist return a json (http 200) or nothing (http 204)
+```powershell
+try {
+    your code here
+}
+catch {
+    write-error $_
+}
+finally{
+  if ($out) {
+      $out | convertto-Json -Compress 
+  }
+}
+```
+
 
 ## Admin console
 
@@ -23,7 +62,7 @@
 
 ### Job
 
-A simple declaration, don't forget to activate it.
+A simple declaration, but don't forget to activate it.
 
 **Add test1.ps1 as a job**
 <iframe width="640" height="360" src="https://www.youtube.com/embed/SqhZ5o1MK1o?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -75,18 +114,50 @@ we can split this url in seven parts, ezBastion use it to route the api.
 
 ## Test it
 
-### Postman
+- call authorization endpoint to get a bearer token, with basic or NTLM auth
+- call our api using this token as bearer authentication
 
-http://www.getpostman.com/
+### With Postman
 
-### Powershell
+Postman is a very popular rest (http) client based on chrome. http://www.getpostman.com/
 
+<iframe width="640" height="360" src="https://www.youtube.com/embed/Aavjbiw68X4?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+### With Powershell
+
+The same using 4 lines of powershell:
+```powershell
+PS C:\> $bastion = "http://CHAVERS-DESK:5505"
+PS C:\> $b = Invoke-RestMethod "$bastion/authorize"  -UseDefaultCredentials 
+PS C:\> $h = @{authorization = $b.token_type + " " + $b.access_token}
+PS C:\> Invoke-RestMethod -Headers $h -Uri "$bastion/v1/poc/test"
+hello world!
+
+PS C:\> 
+```
 
 ## Debug
 
+If you have some issue to integrate your existing powershell scripts.
+
+### Runas
+On the worker machine, start a powershell using the service account used by ezb_wks service. And try to run the script manually.
+
 ### Log
+Have a look in the worker log folder. Do the same with bastion (ezb_srv) log.
 
 ### DB browser
+You can refer to "log" table where all api request information are logged.
+with:
+- date
+- status
+- client ip address
+- token (user accoçunt)
+- controller/action
+- full url
+- bastion and worker used
+- duration
+- error message *normally null ;-)*
 
-### Debug mode
 
