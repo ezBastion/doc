@@ -14,7 +14,7 @@ Windows
 3. Run ezb_db.exe with **init** option.
 """"""""""""""""""""""""""""""""""""""""
 
-- ezb_pki: tpc address and port of ezb_pki.
+- ezb_pki: tcp address and port of ezb_pki.
 - SAN: (Subject Alternative Name) Valid FQDN comma separated list for this certificate. 
 
 4. Edit config.json
