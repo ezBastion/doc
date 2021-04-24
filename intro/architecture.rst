@@ -41,6 +41,7 @@ Authenticated Accounts can be store in ezbastion database or use Microsoft accou
 This token is used as Bearer authentication, when login to admin console or request an api.
 
 features:
+
 - authentication
 - bearer generator
 
@@ -52,6 +53,7 @@ By default the listening don't use TLS, you must put a load balancer in front of
 
 
 features:
+
 - authorization
 - cache (l1)
 - logging
@@ -69,6 +71,7 @@ ezb_pki
 This node provide ECDSA certificates, used by all ezBastion’s node to communicate. 
 
 feature:
+
 - Public key infrastructure
 
 ezb_db
