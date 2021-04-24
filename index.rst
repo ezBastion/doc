@@ -24,33 +24,25 @@ Just one question: Do you have any actions that could be delegated, if there wer
    intro/architecture
    intro/licensing
 
-
-.. toctree::
-   :maxdepth: 2
-   :hidden:
-   :caption: Microservices
-
-   services/ezb_pki
-   services/ezb_db
-   services/ezb_sta
-   services/ezb_srv
-   services/ezb_wks
-   services/admin_console
-   services/ezb_vault
-
 .. toctree::
    :maxdepth: 2
    :hidden:
    :caption: Install
 
    setup/00-setup
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :caption: microservice   
+
    setup/01-ezb_pki
    setup/02-ezb_db
    setup/03-ezb_sta
    setup/04-ezb_srv
    setup/05-ezb_wks
    setup/06-admin_console
-   setup/07-ezb_vault
+
 
 
 .. toctree::
