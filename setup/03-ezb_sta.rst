@@ -1,4 +1,4 @@
-3/ STA (ezb_sta)
+STA (ezb_sta)
 ======================
 
 The STA (Secure Token Authority) is the second node to install. It create JWT token after account authentication.  The JWT was signed with ECDSA key provided by ezb_pki, you must

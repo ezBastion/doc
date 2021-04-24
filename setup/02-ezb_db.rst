@@ -1,4 +1,4 @@
-2/ DB (ezb_db)
+DB (ezb_db)
 =====================
 This service manages communications to the database. It has two listeners, one for the admin console and one for the bastion (ezb_srv). 
 The admin console listerner use JWT authentication while bastion's one use PKI. You must declare the first (default) STA service and copy his public certificat, in the **cert** folder.

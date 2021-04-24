@@ -36,20 +36,26 @@ This area is accessible by clients (users, services, computers) and must use cor
 ezb_sta
 =======
 
-Secure Token Authority (sta) provide Windows domain authentication.
+Secure Token Authority (sta), provide authentication. It accept Basic, HTTP form and SSPI requests.
+Authenticated Accounts can be store in ezbastion database or use Microsoft accounts management (Builtin and domain accounts). It return a signed token in JWT format.
+This token is used as Bearer authentication, when login to admin console or request an api.
 
-- Authentication
-- Token (jwt) issuer
+features:
+- authentication
+- bearer generator
 
 ezb_srv
 =======
 
-This node, called *Bastion*, is the front part of ezBastion architecture. It receive all clients requests and serves as api gateway.
+This node, called *Bastion*, is the front part of ezBastion architecture. It receive all clients requests and serves as api gateway. 
+By default the listening don't use TLS, you must put a load balancer in front of a pair of ezb_srv services (with ssl offload). 
 
-- Authorization
-- Cache (l1)
-- Logging
-- Load balancing workers
+
+features:
+- authorization
+- cache (l1)
+- logging
+- workers's load balancer
 
 *******************
 Infrastructure zone
@@ -62,7 +68,8 @@ ezb_pki
 
 This node provide ECDSA certificates, used by all ezBastion’s node to communicate. 
 
-- Certificates
+feature:
+- Public key infrastructure
 
 ezb_db
 ======

@@ -1,4 +1,4 @@
-5/ Worker (ezb_wks)
+Worker (ezb_wks)
 ===================
 
 This service is in charge of executing your scripts. It must be started with an account with the appropriate rights.

@@ -1,4 +1,4 @@
-4/ Front server (ezb_srv)
+Front server (ezb_srv)
 ====================
 
 this is the service that is responsible for routing and validating authorizations. It receive the requests and give them to the workers.
